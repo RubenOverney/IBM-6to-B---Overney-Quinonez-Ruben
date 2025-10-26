@@ -273,7 +273,7 @@ class _TelefonoPageState extends State<TelefonoPage> {
       _isLoading = true; // Inicia la carga
     });
     try {
-      final response = await http.get(Uri.parse('https://educaysoft.org/apple6b/app/controllers/TelefonoController.php?action=api'));
+      final response = await http.get(Uri.parse('https://educaysoft.org/ibm6b/app/controllers/TelefonoController.php?action=api'));
       if (response.statusCode == 200) {
         final List<dynamic> data = json.decode(response.body);
         setState(() {
@@ -428,7 +428,7 @@ class _PersonaPageState extends State<PersonaPage> {
       _isLoading = true; // Inicia la carga
     });
     try {
-      final response = await http.get(Uri.parse('https://educaysoft.org/apple6b/app/controllers/PersonaController.php?action=api'));
+      final response = await http.get(Uri.parse('https://educaysoft.org/ibm6b/app/controllers/PersonaController.php?action=api'));
       if (response.statusCode == 200) {
         final List<dynamic> data = json.decode(response.body);
         setState(() {
